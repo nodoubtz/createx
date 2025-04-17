@@ -93,6 +93,14 @@ const config: HardhatUserConfig = {
       ),
       accounts,
     },
+    hoodi: {
+      chainId: 560048,
+      url: vars.get(
+        "ETH_HOODI_TESTNET_URL",
+        "https://rpc.hoodi.ethpandaops.io",
+      ),
+      accounts,
+    },
     ethMain: {
       chainId: 1,
       url: ethMainnetUrl,
@@ -681,8 +689,11 @@ const config: HardhatUserConfig = {
       accounts,
     },
     plumeTestnet: {
-      chainId: 98864,
-      url: vars.get("PLUME_TESTNET_URL", "https://test-rpc.plumenetwork.xyz"),
+      chainId: 98867,
+      url: vars.get(
+        "PLUME_TESTNET_URL",
+        "https://testnet-rpc.plumenetwork.xyz",
+      ),
       accounts,
     },
     plumeMain: {
@@ -930,6 +941,47 @@ const config: HardhatUserConfig = {
       url: vars.get("HYCHAIN_MAINNET_URL", "https://rpc.hychain.com/http"),
       accounts,
     },
+    zircuitTestnet: {
+      chainId: 48898,
+      url: vars.get(
+        "ZIRCUIT_TESTNET_URL",
+        "https://garfield-testnet.zircuit.com",
+      ),
+      accounts,
+    },
+    zircuitMain: {
+      chainId: 48900,
+      url: vars.get("ZIRCUIT_MAINNET_URL", "https://zircuit-mainnet.drpc.org"),
+      accounts,
+    },
+    megaETHTestnet: {
+      chainId: 6342,
+      url: vars.get("MEGAETH_TESTNET_URL", "https://carrot.megaeth.com/rpc"),
+      accounts,
+    },
+    bitlayerTestnet: {
+      chainId: 200810,
+      url: vars.get("BITLAYER_TESTNET_URL", "https://testnet-rpc.bitlayer.org"),
+      accounts,
+    },
+    bitlayerMain: {
+      chainId: 200901,
+      url: vars.get("BITLAYER_MAINNET_URL", "https://rpc.bitlayer.org"),
+      accounts,
+    },
+    roninTestnet: {
+      chainId: 2021,
+      url: vars.get(
+        "RONIN_TESTNET_URL",
+        "https://saigon-testnet.roninchain.com/rpc",
+      ),
+      accounts,
+    },
+    roninMain: {
+      chainId: 2020,
+      url: vars.get("RONIN_MAINNET_URL", "https://api.roninchain.com/rpc"),
+      accounts,
+    },
   },
   contractSizer: {
     alphaSort: true,
@@ -964,6 +1016,7 @@ const config: HardhatUserConfig = {
       goerli: vars.get("ETHERSCAN_API_KEY", ""),
       sepolia: vars.get("ETHERSCAN_API_KEY", ""),
       holesky: vars.get("ETHERSCAN_API_KEY", ""),
+      hoodi: vars.get("ETHERSCAN_API_KEY", ""),
       // For BSC testnet & mainnet
       bsc: vars.get("BSC_API_KEY", ""),
       bscTestnet: vars.get("BSC_API_KEY", ""),
@@ -1174,6 +1227,12 @@ const config: HardhatUserConfig = {
       // For HYCHAIN testnet & mainnet
       hychain: vars.get("HYCHAIN_API_KEY", ""),
       hychainTestnet: vars.get("HYCHAIN_API_KEY", ""),
+      // For Zircuit testnet & mainnet
+      zircuit: vars.get("ZIRCUIT_API_KEY", ""),
+      zircuitTestnet: vars.get("ZIRCUIT_API_KEY", ""),
+      // For Bitlayer testnet & mainnet
+      bitlayer: vars.get("BITLAYER_API_KEY", ""),
+      bitlayerTestnet: vars.get("BITLAYER_API_KEY", ""),
     },
     customChains: [
       {
@@ -1182,6 +1241,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-holesky.etherscan.io/api",
           browserURL: "https://holesky.etherscan.io",
+        },
+      },
+      {
+        network: "hoodi",
+        chainId: 560048,
+        urls: {
+          apiURL: "https://api-hoodi.etherscan.io/api",
+          browserURL: "https://hoodi.etherscan.io",
         },
       },
       {
@@ -1624,7 +1691,7 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL:
             "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/XLAYER",
-          browserURL: "https://www.oklink.com/xlayer",
+          browserURL: "https://www.oklink.com/x-layer",
         },
       },
       {
@@ -1633,7 +1700,7 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL:
             "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/XLAYER_TESTNET",
-          browserURL: "https://www.oklink.com/xlayer-test",
+          browserURL: "https://www.oklink.com/x-layer-testnet",
         },
       },
       {
@@ -1840,10 +1907,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "plumeTestnet",
-        chainId: 98864,
+        chainId: 98867,
         urls: {
-          apiURL: "https://test-explorer.plumenetwork.xyz/api",
-          browserURL: "https://test-explorer.plumenetwork.xyz",
+          apiURL: "https://testnet-explorer.plumenetwork.xyz/api",
+          browserURL: "https://testnet-explorer.plumenetwork.xyz",
         },
       },
       {
@@ -1946,8 +2013,8 @@ const config: HardhatUserConfig = {
         network: "storyTestnet",
         chainId: 1315,
         urls: {
-          apiURL: "https://aeneid.storyscan.xyz/api",
-          browserURL: "https://aeneid.storyscan.xyz",
+          apiURL: "https://aeneid.storyscan.io/api",
+          browserURL: "https://aeneid.storyscan.io",
         },
       },
       {
@@ -2026,8 +2093,8 @@ const config: HardhatUserConfig = {
         network: "shapeTestnet",
         chainId: 11011,
         urls: {
-          apiURL: "https://explorer-sepolia.shape.network/api",
-          browserURL: "https://explorer-sepolia.shape.network",
+          apiURL: "https://sepolia.shapescan.xyz/api",
+          browserURL: "https://sepolia.shapescan.xyz",
         },
       },
       {
@@ -2166,7 +2233,7 @@ const config: HardhatUserConfig = {
         chainId: 2911,
         urls: {
           apiURL: "https://explorer.hychain.com/api",
-          browserURL: "https://explorer.hychain.com/",
+          browserURL: "https://explorer.hychain.com",
         },
       },
       {
@@ -2175,6 +2242,39 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://testnet.explorer.hychain.com/api",
           browserURL: "https://testnet.explorer.hychain.com",
+        },
+      },
+      {
+        network: "zircuit",
+        chainId: 48900,
+        urls: {
+          apiURL: "https://explorer.zircuit.com/api/contractVerifyHardhat",
+          browserURL: "https://explorer.zircuit.com",
+        },
+      },
+      {
+        network: "zircuitTestnet",
+        chainId: 48898,
+        urls: {
+          apiURL:
+            "https://explorer.garfield-testnet.zircuit.com/api/contractVerifyHardhat",
+          browserURL: "https://explorer.garfield-testnet.zircuit.com",
+        },
+      },
+      {
+        network: "bitlayer",
+        chainId: 200901,
+        urls: {
+          apiURL: "https://api.btrscan.com/scan/api",
+          browserURL: "https://www.btrscan.com",
+        },
+      },
+      {
+        network: "bitlayerTestnet",
+        chainId: 200810,
+        urls: {
+          apiURL: "https://api-testnet.btrscan.com/scan/api",
+          browserURL: "https://testnet.btrscan.com",
         },
       },
     ],
