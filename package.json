@@ -21,7 +21,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com), Matt Solomon (https://mattsolomon.dev)",
   "license": "AGPL-3.0-only",
-  "packageManager": "pnpm@10.7.0",
+  "packageManager": "pnpm@10.8.1",
   "scripts": {
     "clean": "npx hardhat clean && forge clean",
     "test": "forge test --out forge-artifacts",
@@ -194,6 +194,10 @@
     "deploy:zircuittestnet": "npx hardhat run --no-compile --network zircuitTestnet scripts/deploy.ts",
     "deploy:zircuitmain": "npx hardhat run --no-compile --network zircuitMain scripts/deploy.ts",
     "deploy:megaethtestnet": "npx hardhat run --no-compile --network megaETHTestnet scripts/deploy.ts",
+    "deploy:bitlayertestnet": "npx hardhat run --no-compile --network bitlayerTestnet scripts/deploy.ts",
+    "deploy:bitlayermain": "npx hardhat run --no-compile --network bitlayerMain scripts/deploy.ts",
+    "deploy:ronintestnet": "npx hardhat run --no-compile --network roninTestnet scripts/deploy.ts",
+    "deploy:roninmain": "npx hardhat run --no-compile --network roninMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:check:interface": "pnpm -C interface prettier:check",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
@@ -209,24 +213,24 @@
     "start:interface": "pnpm -C interface start"
   },
   "devDependencies": {
-    "@eslint/js": "^9.23.0",
+    "@eslint/js": "^9.24.0",
     "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@nomicfoundation/hardhat-verify": "^2.0.13",
     "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^9.1.0",
-    "eslint": "^9.23.0",
-    "eslint-config-prettier": "^10.1.1",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
     "ethers": "^6.13.5",
-    "hardhat": "^2.22.19",
-    "hardhat-abi-exporter": "^2.10.1",
+    "hardhat": "^2.23.0",
+    "hardhat-abi-exporter": "^2.11.0",
     "hardhat-contract-sizer": "^2.10.0",
-    "hardhat-gas-reporter": "^2.2.2",
+    "hardhat-gas-reporter": "^2.2.3",
     "prettier": "^3.5.3",
     "prettier-plugin-solidity": "^1.4.2",
     "solhint": "^5.0.5",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.28.0"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.30.1"
   }
 }
