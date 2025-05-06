@@ -2185,7 +2185,7 @@ To verify a deployed [`CreateX`](./src/CreateX.sol) contract on a block explorer
 - [Polygon](https://polygonscan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Polygon zkEVM](https://zkevm.polygonscan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Fantom](https://explorer.fantom.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
-- [Avalanche](https://snowtrace.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
+- [Avalanche](https://snowscan.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Gnosis Chain](https://gnosisscan.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Moonriver](https://moonriver.moonscan.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Moonbeam](https://moonbeam.moonscan.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
@@ -2212,6 +2212,7 @@ To verify a deployed [`CreateX`](./src/CreateX.sol) contract on a block explorer
 - [Kava](https://kavascan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Metis Andromeda](https://andromeda-explorer.metis.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Mode](https://explorer.mode.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
+- [Sei](https://seitrace.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed?chain=pacific-1)
 - [X Layer](https://www.oklink.com/x-layer/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [BOB](https://explorer.gobob.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Core](https://scan.coredao.org/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
@@ -2224,7 +2225,7 @@ To verify a deployed [`CreateX`](./src/CreateX.sol) contract on a block explorer
 - [ZetaChain](https://explorer.zetachain.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [5ireChain](https://5irescan.io/contract/evm/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Oasis Sapphire](https://explorer.oasis.io/mainnet/sapphire/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
-- [World Chain](https://worldchain-mainnet.explorer.alchemy.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
+- [World Chain](https://worldscan.org/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Plume](https://phoenix-explorer.plumenetwork.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Unichain](https://uniscan.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [XDC Network](https://xdcscan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
@@ -2249,6 +2250,7 @@ To verify a deployed [`CreateX`](./src/CreateX.sol) contract on a block explorer
 - [Zircuit](https://explorer.zircuit.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Bitlayer](https://www.btrscan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Ronin](https://app.roninchain.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
+- [ZKsync Era](https://era.zksync.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 
 #### Ethereum Test Networks
 
@@ -2264,7 +2266,7 @@ To verify a deployed [`CreateX`](./src/CreateX.sol) contract on a block explorer
 - [Polygon Sepolia Testnet (Amoy)](https://amoy.polygonscan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Polygon Testnet (zkEVM)](https://cardona-zkevm.polygonscan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Fantom Testnet](https://explorer.testnet.fantom.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
-- [Avalanche Testnet (Fuji)](https://testnet.snowtrace.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
+- [Avalanche Testnet (Fuji)](https://testnet.snowscan.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Gnosis Chain Testnet (Chiado)](https://gnosis-chiado.blockscout.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Moonbeam Testnet (Moonbase Alpha)](https://moonbase.moonscan.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Celo Testnet (Alfajores)](https://alfajores.celoscan.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
@@ -2288,7 +2290,8 @@ To verify a deployed [`CreateX`](./src/CreateX.sol) contract on a block explorer
 - [Fraxtal Holešky Testnet](https://holesky.fraxscan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Metis Sepolia Testnet](https://sepolia-explorer.metisdevops.link/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Mode Sepolia Testnet](https://sepolia.explorer.mode.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
-- [Sei Arctic Testnet](https://seistream.app/account/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
+- [Sei Arctic Devnet](https://seitrace.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed?chain=arctic-1)
+- [Sei Atlantic Testnet](https://seitrace.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed?chain=atlantic-2)
 - [X Layer Sepolia Testnet](https://www.oklink.com/x-layer-testnet/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [BOB Sepolia Testnet](https://testnet-explorer.gobob.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Core Testnet](https://scan.test.btcs.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
@@ -2300,7 +2303,7 @@ To verify a deployed [`CreateX`](./src/CreateX.sol) contract on a block explorer
 - [ZetaChain Testnet (Athens-3)](https://athens.explorer.zetachain.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [5ireChain Testnet](https://testnet.5irescan.io/contract/evm/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Oasis Sapphire Testnet](https://explorer.oasis.io/testnet/sapphire/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
-- [World Chain Sepolia Testnet](https://worldchain-sepolia.explorer.alchemy.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
+- [World Chain Sepolia Testnet](https://sepolia.worldscan.org/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Plume Sepolia Testnet](https://testnet-explorer.plumenetwork.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Unichain Sepolia Testnet](https://sepolia.uniscan.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [XDC Network Testnet (Apothem)](https://testnet.xdcscan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
@@ -2318,7 +2321,7 @@ To verify a deployed [`CreateX`](./src/CreateX.sol) contract on a block explorer
 - [Soneium Sepolia Testnet (Minato)](https://soneium-minato.blockscout.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Swellchain Sepolia Testnet](https://swell-testnet-explorer.alt.technology/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Hemi Sepolia Testnet](https://testnet.explorer.hemi.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
-- [Berachain Testnet (bArtio)](https://bartio.beratrail.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
+- [Berachain Testnet (Bepolia)](https://testnet.berascan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Monad Testnet](https://testnet.monadexplorer.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Corn Sepolia Testnet](https://testnet.cornscan.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Arena-Z Sepolia Testnet](https://arena-z.blockscout.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
@@ -2328,6 +2331,7 @@ To verify a deployed [`CreateX`](./src/CreateX.sol) contract on a block explorer
 - [MegaETH Testnet](https://www.megaexplorer.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Bitlayer Testnet](https://testnet-scan.bitlayer.org/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 - [Ronin Testnet (Saigon)](https://saigon-app.roninchain.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
+- [ZKsync Era Sepolia Testnet](https://sepolia-era.zksync.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 
 ## Integration With External Tooling
 

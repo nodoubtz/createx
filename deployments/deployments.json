@@ -67,7 +67,7 @@
     "name": "Avalanche",
     "chainId": 43114,
     "urls": [
-      "https://snowtrace.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed",
+      "https://snowscan.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed",
       "https://repo.sourcify.dev/43114/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
     ]
   },
@@ -273,6 +273,13 @@
     ]
   },
   {
+    "name": "Sei",
+    "chainId": 1329,
+    "urls": [
+      "https://seitrace.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed?chain=pacific-1"
+    ]
+  },
+  {
     "name": "X Layer",
     "chainId": 196,
     "urls": [
@@ -365,7 +372,7 @@
     "name": "World Chain",
     "chainId": 480,
     "urls": [
-      "https://worldchain-mainnet.explorer.alchemy.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
+      "https://worldscan.org/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
     ]
   },
   {
@@ -540,6 +547,13 @@
     ]
   },
   {
+    "name": "ZKsync Era",
+    "chainId": 324,
+    "urls": [
+      "https://era.zksync.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
+    ]
+  },
+  {
     "name": "Sepolia",
     "chainId": 11155111,
     "urls": [
@@ -613,7 +627,7 @@
     "name": "Avalanche Testnet (Fuji)",
     "chainId": 43113,
     "urls": [
-      "https://testnet.snowtrace.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed",
+      "https://testnet.snowscan.xyz/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed",
       "https://repo.sourcify.dev/43113/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
     ]
   },
@@ -790,10 +804,17 @@
     ]
   },
   {
-    "name": "Sei Arctic Testnet",
+    "name": "Sei Arctic Devnet",
     "chainId": 713715,
     "urls": [
-      "https://seistream.app/account/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
+      "https://seitrace.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed?chain=arctic-1"
+    ]
+  },
+  {
+    "name": "Sei Atlantic Testnet",
+    "chainId": 1328,
+    "urls": [
+      "https://seitrace.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed?chain=atlantic-2"
     ]
   },
   {
@@ -881,7 +902,7 @@
     "name": "World Chain Sepolia Testnet",
     "chainId": 4801,
     "urls": [
-      "https://worldchain-sepolia.explorer.alchemy.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
+      "https://sepolia.worldscan.org/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
     ]
   },
   {
@@ -1005,10 +1026,10 @@
     ]
   },
   {
-    "name": "Berachain Testnet (bArtio)",
-    "chainId": 80084,
+    "name": "Berachain Testnet (Bepolia)",
+    "chainId": 80069,
     "urls": [
-      "https://bartio.beratrail.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
+      "https://testnet.berascan.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
     ]
   },
   {
@@ -1074,6 +1095,13 @@
     "urls": [
       "https://saigon-app.roninchain.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed",
       "https://sourcify-repo.roninchain.com/contracts/partial_match/2021/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed/"
+    ]
+  },
+  {
+    "name": "ZKsync Era Sepolia Testnet",
+    "chainId": 300,
+    "urls": [
+      "https://sepolia-era.zksync.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
     ]
   }
 ]

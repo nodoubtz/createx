@@ -535,9 +535,19 @@ const config: HardhatUserConfig = {
       url: vars.get("MODE_MAINNET_URL", "https://mainnet.mode.network"),
       accounts,
     },
-    seiTestnet: {
+    seiDevnet: {
       chainId: 713715,
-      url: vars.get("SEI_TESTNET_URL", "https://evm-rpc-arctic-1.sei-apis.com"),
+      url: vars.get("SEI_DEVNET_URL", "https://evm-rpc-arctic-1.sei-apis.com"),
+      accounts,
+    },
+    seiTestnet: {
+      chainId: 1328,
+      url: vars.get("SEI_TESTNET_URL", "https://evm-rpc-testnet.sei-apis.com"),
+      accounts,
+    },
+    seiMain: {
+      chainId: 1329,
+      url: vars.get("SEI_MAINNET_URL", "https://evm-rpc.sei-apis.com"),
       accounts,
     },
     xlayerTestnet: {
@@ -881,8 +891,11 @@ const config: HardhatUserConfig = {
       accounts,
     },
     berachainTestnet: {
-      chainId: 80084,
-      url: vars.get("BERACHAIN_TESTNET_URL", "https://bartio.drpc.org"),
+      chainId: 80069,
+      url: vars.get(
+        "BERACHAIN_TESTNET_URL",
+        "https://bepolia.rpc.berachain.com",
+      ),
       accounts,
     },
     berachainMain: {
@@ -980,6 +993,16 @@ const config: HardhatUserConfig = {
     roninMain: {
       chainId: 2020,
       url: vars.get("RONIN_MAINNET_URL", "https://api.roninchain.com/rpc"),
+      accounts,
+    },
+    zkSyncTestnet: {
+      chainId: 300,
+      url: vars.get("ZKSYNC_TESTNET_URL", "https://sepolia.era.zksync.dev"),
+      accounts,
+    },
+    zkSyncMain: {
+      chainId: 324,
+      url: vars.get("ZKSYNC_MAINNET_URL", "https://mainnet.era.zksync.io"),
       accounts,
     },
   },
@@ -1233,6 +1256,9 @@ const config: HardhatUserConfig = {
       // For Bitlayer testnet & mainnet
       bitlayer: vars.get("BITLAYER_API_KEY", ""),
       bitlayerTestnet: vars.get("BITLAYER_API_KEY", ""),
+      // For ZKsync testnet & mainnet
+      zkSync: vars.get("ZKSYNC_API_KEY", ""),
+      zkSyncTestnet: vars.get("ZKSYNC_API_KEY", ""),
     },
     customChains: [
       {
@@ -1363,6 +1389,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-sepolia.arbiscan.io/api",
           browserURL: "https://sepolia.arbiscan.io",
+        },
+      },
+      {
+        network: "avalanche",
+        chainId: 43114,
+        urls: {
+          apiURL: "https://api.snowscan.xyz/api",
+          browserURL: "https://snowscan.xyz",
+        },
+      },
+      {
+        network: "avalancheFujiTestnet",
+        chainId: 43113,
+        urls: {
+          apiURL: "https://api-testnet.snowscan.xyz/api",
+          browserURL: "https://testnet.snowscan.xyz",
         },
       },
       {
@@ -1885,16 +1927,16 @@ const config: HardhatUserConfig = {
         network: "worldChain",
         chainId: 480,
         urls: {
-          apiURL: "https://worldchain-mainnet.explorer.alchemy.com/api",
-          browserURL: "https://worldchain-mainnet.explorer.alchemy.com",
+          apiURL: "https://api.worldscan.org/api",
+          browserURL: "https://worldscan.org",
         },
       },
       {
         network: "worldChainTestnet",
         chainId: 4801,
         urls: {
-          apiURL: "https://worldchain-sepolia.explorer.alchemy.com/api",
-          browserURL: "https://worldchain-sepolia.explorer.alchemy.com",
+          apiURL: "https://api-sepolia.worldscan.org/api",
+          browserURL: "https://sepolia.worldscan.org",
         },
       },
       {
@@ -2171,11 +2213,10 @@ const config: HardhatUserConfig = {
       },
       {
         network: "berachainTestnet",
-        chainId: 80084,
+        chainId: 80069,
         urls: {
-          apiURL:
-            "https://api.routescan.io/v2/network/testnet/evm/80084/etherscan",
-          browserURL: "https://bartio.beratrail.io",
+          apiURL: "https://api-testnet.berascan.com/api",
+          browserURL: "https://testnet.berascan.com",
         },
       },
       {
@@ -2275,6 +2316,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-testnet.btrscan.com/scan/api",
           browserURL: "https://testnet.btrscan.com",
+        },
+      },
+      {
+        network: "zkSync",
+        chainId: 324,
+        urls: {
+          apiURL: "https://api-era.zksync.network/api",
+          browserURL: "https://era.zksync.network",
+        },
+      },
+      {
+        network: "zkSyncTestnet",
+        chainId: 300,
+        urls: {
+          apiURL: "https://api-sepolia-era.zksync.network/api",
+          browserURL: "https://sepolia-era.zksync.network",
         },
       },
     ],
