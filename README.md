@@ -1,3 +1,5 @@
+[![🔍️ CodeQL](https://github.com/nodoubtz/createx/actions/workflows/codeql.yml/badge.svg?branch=Nodoubtz)](https://github.com/nodoubtz/createx/actions/workflows/codeql.yml)
+
 # Createx
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
