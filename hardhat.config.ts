@@ -700,18 +700,12 @@ const config: HardhatUserConfig = {
     },
     plumeTestnet: {
       chainId: 98867,
-      url: vars.get(
-        "PLUME_TESTNET_URL",
-        "https://testnet-rpc.plumenetwork.xyz",
-      ),
+      url: vars.get("PLUME_TESTNET_URL", "https://testnet-rpc.plume.org"),
       accounts,
     },
     plumeMain: {
       chainId: 98866,
-      url: vars.get(
-        "PLUME_MAINNET_URL",
-        "https://phoenix-rpc.plumenetwork.xyz",
-      ),
+      url: vars.get("PLUME_MAINNET_URL", "https://rpc.plume.org"),
       accounts,
     },
     unichainTestnet: {
@@ -1005,6 +999,19 @@ const config: HardhatUserConfig = {
       url: vars.get("ZKSYNC_MAINNET_URL", "https://mainnet.era.zksync.io"),
       accounts,
     },
+    immutableZkEVMTestnet: {
+      chainId: 13473,
+      url: vars.get(
+        "IMMUTABLEZKEVM_TESTNET_URL",
+        "https://rpc.testnet.immutable.com",
+      ),
+      accounts,
+    },
+    immutableZkEVMMain: {
+      chainId: 13371,
+      url: vars.get("IMMUTABLEZKEVM_MAINNET_URL", "https://rpc.immutable.com"),
+      accounts,
+    },
   },
   contractSizer: {
     alphaSort: true,
@@ -1259,6 +1266,9 @@ const config: HardhatUserConfig = {
       // For ZKsync testnet & mainnet
       zkSync: vars.get("ZKSYNC_API_KEY", ""),
       zkSyncTestnet: vars.get("ZKSYNC_API_KEY", ""),
+      // For Immutable zkEVM testnet & mainnet
+      immutableZkEVM: vars.get("IMMUTABLEZKEVM_API_KEY", ""),
+      immutableZkEVMTestnet: vars.get("IMMUTABLEZKEVM_API_KEY", ""),
     },
     customChains: [
       {
@@ -1943,16 +1953,16 @@ const config: HardhatUserConfig = {
         network: "plume",
         chainId: 98866,
         urls: {
-          apiURL: "https://phoenix-explorer.plumenetwork.xyz/api",
-          browserURL: "https://phoenix-explorer.plumenetwork.xyz",
+          apiURL: "https://explorer.plume.org/api",
+          browserURL: "https://explorer.plume.org",
         },
       },
       {
         network: "plumeTestnet",
         chainId: 98867,
         urls: {
-          apiURL: "https://testnet-explorer.plumenetwork.xyz/api",
-          browserURL: "https://testnet-explorer.plumenetwork.xyz",
+          apiURL: "https://testnet-explorer.plume.org/api",
+          browserURL: "https://testnet-explorer.plume.org",
         },
       },
       {
@@ -2332,6 +2342,22 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "https://api-sepolia-era.zksync.network/api",
           browserURL: "https://sepolia-era.zksync.network",
+        },
+      },
+      {
+        network: "immutableZkEVM",
+        chainId: 13371,
+        urls: {
+          apiURL: "https://explorer.immutable.com/api",
+          browserURL: "https://explorer.immutable.com",
+        },
+      },
+      {
+        network: "immutableZkEVMTestnet",
+        chainId: 13473,
+        urls: {
+          apiURL: "https://explorer.testnet.immutable.com/api",
+          browserURL: "https://explorer.testnet.immutable.com",
         },
       },
     ],
