@@ -21,7 +21,7 @@
   },
   "author": "pcaversaccio (https://pcaversaccio.com), Matt Solomon (https://mattsolomon.dev)",
   "license": "AGPL-3.0-only",
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "scripts": {
     "clean": "npx hardhat clean && forge clean",
     "test": "forge test --out forge-artifacts",
@@ -204,6 +204,10 @@
     "deploy:zksyncmain": "npx hardhat run --no-compile --network zkSyncMain scripts/deploy.ts",
     "deploy:immutablezkevmtestnet": "npx hardhat run --no-compile --network immutableZkEVMTestnet scripts/deploy.ts",
     "deploy:immutablezkevmmain": "npx hardhat run --no-compile --network immutableZkEVMMain scripts/deploy.ts",
+    "deploy:abstracttestnet": "npx hardhat run --no-compile --network abstractTestnet scripts/deploy.ts",
+    "deploy:abstractmain": "npx hardhat run --no-compile --network abstractMain scripts/deploy.ts",
+    "deploy:hyperevmtestnet": "npx hardhat run --no-compile --network hyperevmTestnet scripts/deploy.ts",
+    "deploy:hyperevmmain": "npx hardhat run --no-compile --network hyperevmMain scripts/deploy.ts",
     "prettier:check": "npx prettier -c \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
     "prettier:check:interface": "pnpm -C interface prettier:check",
     "prettier:fix": "npx prettier -w \"**/*.{js,ts,md,sol,json,yml,yaml}\"",
@@ -219,14 +223,14 @@
     "start:interface": "pnpm -C interface start"
   },
   "devDependencies": {
-    "@eslint/js": "^9.26.0",
+    "@eslint/js": "^9.27.0",
     "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@nomicfoundation/hardhat-verify": "^2.0.13",
     "@typechain/ethers-v6": "^0.5.1",
     "@typechain/hardhat": "^9.1.0",
-    "eslint": "^9.26.0",
-    "eslint-config-prettier": "^10.1.3",
-    "ethers": "^6.14.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "ethers": "^6.14.1",
     "hardhat": "^2.24.0",
     "hardhat-abi-exporter": "^2.11.0",
     "hardhat-contract-sizer": "^2.10.0",
@@ -237,6 +241,6 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.32.0"
+    "typescript-eslint": "^8.32.1"
   }
 }
