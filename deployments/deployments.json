@@ -575,6 +575,21 @@
     ]
   },
   {
+    "name": "Kaia",
+    "chainId": 8217,
+    "urls": [
+      "https://kaiascope.com/account/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed",
+      "https://repo.sourcify.dev/8217/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
+    ]
+  },
+  {
+    "name": "ApeChain",
+    "chainId": 33139,
+    "urls": [
+      "https://apescan.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
+    ]
+  },
+  {
     "name": "Sepolia",
     "chainId": 11155111,
     "urls": [
@@ -1144,6 +1159,14 @@
     "chainId": "998",
     "urls": [
       "https://testnet.purrsec.com/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
+    ]
+  },
+  {
+    "name": "ApeChain Sepolia Testnet (Curtis)",
+    "chainId": 33111,
+    "urls": [
+      "https://curtis.apescan.io/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed",
+      "https://repo.sourcify.dev/33111/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed"
     ]
   }
 ]
