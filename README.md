@@ -1,3 +1,5 @@
+[![🚀 UI deployment](https://github.com/nodoubtz/createx/actions/workflows/deploy.yml/badge.svg)](https://github.com/nodoubtz/createx/actions/workflows/deploy.yml)
+
 [![🔍️ CodeQL](https://github.com/nodoubtz/createx/actions/workflows/codeql.yml/badge.svg?branch=Nodoubtz)](https://github.com/nodoubtz/createx/actions/workflows/codeql.yml)
 
 # Createx
