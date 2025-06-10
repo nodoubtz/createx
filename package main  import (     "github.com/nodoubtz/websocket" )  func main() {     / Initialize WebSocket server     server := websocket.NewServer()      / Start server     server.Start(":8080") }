@@ -6,3 +6,5 @@ rm package-lock.json pnpm-lock.yaml
 
 # If using pnpm
 rm package-lock.json yarn.lock
+
+npm start
