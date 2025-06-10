@@ -1,0 +1,8 @@
+# If using npm
+rm yarn.lock pnpm-lock.yaml
+
+# If using yarn
+rm package-lock.json pnpm-lock.yaml
+
+# If using pnpm
+rm package-lock.json yarn.lock
